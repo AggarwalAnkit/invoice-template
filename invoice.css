@@ -44,3 +44,12 @@
 	font-size: 8px;
 	color: #4a4a4a;
 }
+
+#billing-details {
+  margin: 8px;
+  background-color: #ffffff;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 24px;
+}

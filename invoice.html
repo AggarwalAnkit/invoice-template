@@ -20,71 +20,145 @@
         </div>
       </div>
 
-      <div style="display: flex; flex-direction: row; align-items: flex-end; margin-top: 19px">
-        <span class="invoice-title-text" style="font-size: 24px">Invoice</span>
-        <span class="invoice-content-text" style="color: #9b9b9b; margin-left: 6px">
+      <div style="display: flex; flex-direction: row; align-items: flex-end; margin-top: 19px;">
+        <span class="invoice-title-text" style="font-size: 24px;">Invoice</span>
+        <span class="invoice-content-text" style="color: #9b9b9b; margin-left: 6px;">
           Original for recipient and Duplicate for Supplier.
         </span>
         <div
           style="flex: 1; display: flex; flex-direction: row;
-                 align-items: flex-end; justify-content: flex-end; margin-left: ">
-          <span class="invoice-title-text" style="font-size: 9px; color: #9e9e9e">
+                 align-items: flex-end; justify-content: flex-end;">
+          <span class="invoice-title-text" style="font-size: 9px; color: #9e9e9e;">
             TREEBO HOTEL ID
           </span>
-          <span class="invoice-content-text" style="color: #000000; margin-left: 8px; margin-right: 18px">
+          <span class="invoice-content-text" style="color: #000000; margin-left: 8px; margin-right: 18px;">
             HX-7564893
           </span>
 
-          <span class="invoice-title-text" style="font-size: 9px; color: #9e9e9e">
+          <span class="invoice-title-text" style="font-size: 9px; color: #9e9e9e;">
             STATE CODE
           </span>
-          <span class="invoice-content-text" style="color: #000000; margin-left: 8px">
+          <span class="invoice-content-text" style="color: #000000; margin-left: 8px;">
             04
           </span>
 
         </div>
       </div>
 
-      <div style="margin-top: 15px; height: 1px; background-color: #979797"></div>
+      <div style="margin-top: 15px; height: 1px; background-color: #979797;"></div>
 
       <div
-        style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 12px">
+        style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 12px;">
         <div id="invoice-number">
-          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px">
+          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
             INVOICE NUMBER
           </span>
 
-          <span class="invoice-content-text" style="color: #000000; margin-left: 6px">
+          <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
             43678297436
           </span>
         </div>
 
         <div id="invoice-date">
-          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px">
+          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
             INVOICE DATE
           </span>
 
-          <span class="invoice-content-text" style="color: #000000; margin-left: 6px">
+          <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
             June 21, 2017
           </span>
         </div>
 
         <div id="invoice-due-date">
-          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px">
+          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
             INVOICE DUE DATE
           </span>
 
-          <span class="invoice-content-text" style="color: #000000; margin-left: 6px">
+          <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
             July 21, 2017
           </span>
         </div>
       </div>
 
-      <div style="margin-top: 12px; height: 1px; background-color: #979797"></div>
+      <div style="margin-top: 12px; height: 1px; background-color: #979797;"></div>
 
-      <div style="display: flex; ">
+      <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 24px;">
+        <div id="bill-to-section" style="display: flex; flex-direction: column;">
+            <div style="flex: 1; display: flex; flex-direction row;">
+              <span class="invoice-title-text"; style="color: #9e9e9e; font-size: 8px;">
+                BILL TO
+              </span>
+              <div id="bill-to-details" class="invoice-content-text"
+                  style="display: flex; flex-direction: column; margin-left: 10px; color: #000000; font-size: 9px;s">
+                <span id="company-name" style="line-height: 6px;">
+                  Airtel Rajastan
+                </span>
+                <span id="company-address" style="line-height: 12px; margin-top: 6px;">
+                  B, Mukutpura House,Motilal Avenue, Motilala,
+                </span>
+                <span id="company-phone-number" style="line-height: 12px;">
+                  +91 4747644888
+                </span>
+                <span id="company-email" style="line-height: 12px;">
+                  abc@airtel.com
+                </span>
+              </div>
+            </div>
 
+            <div style="display: flex; flex-direction row; margin-top: 10px;">
+              <span class="invoice-title-text"; style="color: #9e9e9e; font-size: 8px;">
+                GSTN
+              </span>
+              <span id="corporate-gstn-number" class="invoice-content-text"
+                  style="margin-left: 19px; color: #000000; font-size: 9px;">
+                43678264
+              </span>
+            </div>
+        </div>
+
+        <div id="booking-details-section" style="display: flex; flex-direction: row;">
+          <div id="booking-detail-key"  class="invoice-title-text"
+            style="display: flex; flex-direction: column; color: #9e9e9e; font-size: 8px">
+            <span>
+              GROUP ID
+            </span>
+            <span style="margin-top: 10px">
+              REF ID
+            </span>
+            <span style="margin-top: 19px">
+              BOOKING DATE
+            </span>
+            <span style="margin-top: 10px">
+              CHECK IN
+            </span>
+            <span style="margin-top: 10px">
+              CHECK OUT
+            </span>
+          </div>
+
+          <div id="booking-detail-value"  class="invoice-content-text"
+            style="display: flex; flex-direction: column; margin-left: 16px; color: #000000; font-size: 9px;">
+            <span>
+              G 5463782
+            </span>
+            <span style="margin-top: 10px">
+              XYZ
+            </span>
+            <span style="margin-top: 19px">
+              Dec 21, 2016
+            </span>
+            <span style="margin-top: 10px">
+              June 21, 2017
+            </span>
+            <span style="margin-top: 10px">
+              June 30, 2017
+            </span>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div id="billing-details">
     </div>
 
   </body>
