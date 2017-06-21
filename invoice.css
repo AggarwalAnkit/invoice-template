@@ -53,3 +53,21 @@
   padding-top: 12px;
   padding-bottom: 24px;
 }
+
+#payment-information {
+  margin: 8px;
+  background-color: #ffffff;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+#footer {
+  margin: 8px;
+  background-color: #ffffff;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 18px;
+  padding-bottom: 10px;
+}

@@ -17,7 +17,7 @@ html, body {
 	/* Styles for better appearance on screens only -- are reset to defaults in print styles later */
 
 	/* Use a non-white background color to make the content areas stick out from the full page box */
-	background-color: #eee;
+	background-color: #f1f1f1;
 }
 /* Styles that are shared by all elements */
 * {
@@ -85,8 +85,8 @@ table {
 @media print {
 	html, body {
 		/* Reset the document's background color */
-		background-color: #fff;
-		 -webkit-print-color-adjust: exact;
+		/* background-color: #fff; */
+		-webkit-print-color-adjust: exact;
 	}
 	.page {
 		/* Reset all page styles that have been for better screen appearance only */
