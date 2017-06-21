@@ -1,0 +1,46 @@
+#header {
+  background-color: #ffffff;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 36px;
+  padding-bottom: 24px;
+}
+
+#header-top {
+  display: flex;
+  flex-direction: row;
+}
+
+#logo {
+  height: 33px;
+  width: 79px;
+  align-self: flex-start;
+}
+
+#hotel-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: space-around;
+}
+
+#hotel-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: space-around;
+}
+
+.invoice-title-text {
+  font-family: Arial-MT;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.invoice-content-text {
+  font-family: ArialMT;
+	font-size: 8px;
+	color: #4a4a4a;
+}
