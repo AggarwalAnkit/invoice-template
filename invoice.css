@@ -9,24 +9,12 @@
 #logo {
   height: 33px;
   width: 79px;
-  align-self: flex-start;
   float: left;
 }
 
 #hotel-details {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: flex-end;
-  align-content: space-around;
+  text-align: right;
   float: right;
-}
-
-#hotel-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  align-content: space-around;
 }
 
 .invoice-title-text {
