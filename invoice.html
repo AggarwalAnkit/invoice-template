@@ -5,266 +5,304 @@
   </head>
 
   <body class="page">
+    <!-- extra div for background color hack during printing (because if we provide background color to body then it is ignored during printing) -->
+    <div style="background-color: #f1f1f1; padding-bottom: 5px;">
+      <div id="header">
+        <div id="header-top">
+          <img id="logo" src="logo.svg" />
 
-    <div id="header">
-      <div id="header-top">
-        <img id="logo" src="logo.svg" />
-
-        <div id="hotel-details">
-          <span id="hotel-name" class="invoice-title-text" style="line-height: 8px;">Hotel Royce</span>
-          <div id="hotel-info" class="invoice-content-text" style="line-height: 12px; margin-top: 5px">
-            <span>412/A, 1st C cross, 7th Block, Koramangala, Bangalore 560034</span>
-            <span>+91 9980458211 | hello@treebohotels.com | www.treebohotels.com</span>
-            <span>GSTN 43678264</span>
+          <div id="hotel-details">
+            <span id="hotel-name" class="invoice-title-text" style="line-height: 8px;">Hotel Royce</span>
+            <div id="hotel-info" class="invoice-content-text" style="line-height: 12px; margin-top: 5px">
+              <span>412/A, 1st C cross, 7th Block, Koramangala, Bangalore 560034</span>
+              <span>+91 9980458211 | hello@treebohotels.com | www.treebohotels.com</span>
+              <span>GSTN 43678264</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div style="display: flex; flex-direction: row; align-items: flex-end;
-                  margin-top: 19px; line-height: 6px;">
-        <span class="invoice-title-text" style="font-size: 24px; line-height: 18px">Invoice</span>
-        <span class="invoice-content-text" style="color: #9b9b9b; margin-left: 6px;">
-          Original for recipient and Duplicate for Supplier.
-        </span>
+        <div style="display: flex; flex-direction: row; align-items: flex-end;
+                    margin-top: 19px; line-height: 6px;">
+          <span class="invoice-title-text" style="font-size: 24px; line-height: 18px">Invoice</span>
+          <span class="invoice-content-text" style="color: #9b9b9b; margin-left: 6px;">
+            Original for recipient and Duplicate for Supplier.
+          </span>
+          <div
+            style="flex: 1; display: flex; flex-direction: row;
+                   align-items: flex-end; justify-content: flex-end;">
+            <span class="invoice-title-text" style="font-size: 9px; color: #9e9e9e;">
+              TREEBO HOTEL ID
+            </span>
+            <span class="invoice-content-text" style="color: #000000; margin-left: 8px; margin-right: 18px;">
+              HX-7564893
+            </span>
+
+            <span class="invoice-title-text" style="font-size: 9px; color: #9e9e9e;">
+              STATE CODE
+            </span>
+            <span class="invoice-content-text" style="color: #000000; margin-left: 8px;">
+              04
+            </span>
+
+          </div>
+        </div>
+
+        <div style="margin-top: 15px; height: 1px; background-color: rgba(151, 151, 151, 0.15);"></div>
+
         <div
-          style="flex: 1; display: flex; flex-direction: row;
-                 align-items: flex-end; justify-content: flex-end;">
-          <span class="invoice-title-text" style="font-size: 9px; color: #9e9e9e;">
-            TREEBO HOTEL ID
-          </span>
-          <span class="invoice-content-text" style="color: #000000; margin-left: 8px; margin-right: 18px;">
-            HX-7564893
-          </span>
-
-          <span class="invoice-title-text" style="font-size: 9px; color: #9e9e9e;">
-            STATE CODE
-          </span>
-          <span class="invoice-content-text" style="color: #000000; margin-left: 8px;">
-            04
-          </span>
-
-        </div>
-      </div>
-
-      <div style="margin-top: 15px; height: 1px; background-color: rgba(151, 151, 151, 0.15);"></div>
-
-      <div
-        style="display: flex; flex-direction: row; justify-content: space-between;
-               margin-top: 12px; line-height: 6px;">
-        <div id="invoice-number">
-          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
-            INVOICE NUMBER
-          </span>
-
-          <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
-            43678297436
-          </span>
-        </div>
-
-        <div id="invoice-date">
-          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
-            INVOICE DATE
-          </span>
-
-          <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
-            June 21, 2017
-          </span>
-        </div>
-
-        <div id="invoice-due-date">
-          <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
-            INVOICE DUE DATE
-          </span>
-
-          <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
-            July 21, 2017
-          </span>
-        </div>
-      </div>
-
-      <div style="margin-top: 12px; height: 1px; background-color: rgba(151, 151, 151, 0.15);"></div>
-
-      <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 24px;">
-        <div id="bill-to-section" style="display: flex; flex-direction: column;">
-            <div style="flex: 1; display: flex; flex-direction row;">
-              <span class="invoice-title-text"; style="color: #9e9e9e; font-size: 8px;">
-                BILL TO
-              </span>
-              <div id="bill-to-details" class="invoice-content-text"
-                  style="display: flex; flex-direction: column; margin-left: 10px; color: #000000; font-size: 9px;">
-                <span id="company-name" style="line-height: 6px;">
-                  Airtel Rajastan
-                </span>
-                <span id="company-address" style="line-height: 12px; margin-top: 6px;">
-                  B, Mukutpura House,Motilal Avenue, Motilala,
-                </span>
-                <span id="company-phone-number" style="line-height: 12px;">
-                  +91 4747644888
-                </span>
-                <span id="company-email" style="line-height: 12px;">
-                  abc@airtel.com
-                </span>
-              </div>
-            </div>
-
-            <div style="display: flex; flex-direction row; margin-top: 10px;">
-              <span class="invoice-title-text"; style="color: #9e9e9e; font-size: 8px; line-height: 6px;">
-                GSTN
-              </span>
-              <span id="corporate-gstn-number" class="invoice-content-text"
-                  style="margin-left: 19px; color: #000000; font-size: 9px; line-height: 6px;">
-                43678264
-              </span>
-            </div>
-        </div>
-
-        <div id="booking-details-section" style="display: flex; flex-direction: row; line-height: 6px;">
-          <div id="booking-detail-key"  class="invoice-title-text"
-            style="display: flex; flex-direction: column; color: #9e9e9e; font-size: 8px">
-            <span>
-              GROUP ID
+          style="display: flex; flex-direction: row; justify-content: space-between;
+                 margin-top: 12px; line-height: 6px;">
+          <div id="invoice-number">
+            <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
+              INVOICE NUMBER
             </span>
-            <span style="margin-top: 10px">
-              REF ID
-            </span>
-            <span style="margin-top: 19px">
-              BOOKING DATE
-            </span>
-            <span style="margin-top: 10px">
-              CHECK IN
-            </span>
-            <span style="margin-top: 10px">
-              CHECK OUT
+
+            <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
+              43678297436
             </span>
           </div>
 
-          <div id="booking-detail-value"  class="invoice-content-text"
-            style="display: flex; flex-direction: column; margin-left: 16px; color: #000000; font-size: 9px;">
-            <span>
-              G 5463782
+          <div id="invoice-date">
+            <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
+              INVOICE DATE
             </span>
-            <span style="margin-top: 10px">
-              XYZ
-            </span>
-            <span style="margin-top: 19px">
-              Dec 21, 2016
-            </span>
-            <span style="margin-top: 10px">
+
+            <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
               June 21, 2017
             </span>
-            <span style="margin-top: 10px">
-              June 30, 2017
+          </div>
+
+          <div id="invoice-due-date">
+            <span class="invoice-title-text" style="color: #0eb550; font-size: 8px;">
+              INVOICE DUE DATE
+            </span>
+
+            <span class="invoice-content-text" style="color: #000000; margin-left: 6px;">
+              July 21, 2017
             </span>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div id="billing-details">
-      <div id="billing-header" style="display: flex; flex-direction: row;">
-        <span class="invoice-title-text" style="font-size: 9px; color: #222948; margin-right: 52px; line-height: 7px;">
-          Guest Details
-        </span>
-        <div class="invoice-title-text"
-          style="flex: 1; display: flex; flex-direction: row; justify-content: space-between;
-                font-size: 9px; color: #222948; line-height: 7px; text-align: center;">
-          <span>
-            DATE
-          </span>
-          <span>
-            SERVICES
-          </span>
-          <span>
-            HSN/SAC
-          </span>
-          <span>
-            TAX
-          </span>
-          <span>
-            COST
-          </span>
-          <span>
-            SGST
-          </span>
-          <span>
-            TOTAL
-          </span>
+        <div style="margin-top: 12px; height: 1px; background-color: rgba(151, 151, 151, 0.15);"></div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 24px;">
+          <div id="bill-to-section" style="display: flex; flex-direction: column;">
+              <div style="flex: 1; display: flex; flex-direction row;">
+                <span class="invoice-title-text"; style="color: #9e9e9e; font-size: 8px;">
+                  BILL TO
+                </span>
+                <div id="bill-to-details" class="invoice-content-text"
+                    style="display: flex; flex-direction: column; margin-left: 10px; color: #000000; font-size: 9px;">
+                  <span id="company-name" style="line-height: 6px;">
+                    Airtel Rajastan
+                  </span>
+                  <span id="company-address" style="line-height: 12px; margin-top: 6px;">
+                    B, Mukutpura House,Motilal Avenue, Motilala,
+                  </span>
+                  <span id="company-phone-number" style="line-height: 12px;">
+                    +91 4747644888
+                  </span>
+                  <span id="company-email" style="line-height: 12px;">
+                    abc@airtel.com
+                  </span>
+                </div>
+              </div>
+
+              <div style="display: flex; flex-direction row; margin-top: 10px;">
+                <span class="invoice-title-text"; style="color: #9e9e9e; font-size: 8px; line-height: 6px;">
+                  GSTN
+                </span>
+                <span id="corporate-gstn-number" class="invoice-content-text"
+                    style="margin-left: 19px; color: #000000; font-size: 9px; line-height: 6px;">
+                  43678264
+                </span>
+              </div>
+          </div>
+
+          <div id="booking-details-section" style="display: flex; flex-direction: row; line-height: 6px;">
+            <div id="booking-detail-key"  class="invoice-title-text"
+              style="display: flex; flex-direction: column; color: #9e9e9e; font-size: 8px">
+              <span>
+                GROUP ID
+              </span>
+              <span style="margin-top: 10px">
+                REF ID
+              </span>
+              <span style="margin-top: 19px">
+                BOOKING DATE
+              </span>
+              <span style="margin-top: 10px">
+                CHECK IN
+              </span>
+              <span style="margin-top: 10px">
+                CHECK OUT
+              </span>
+            </div>
+
+            <div id="booking-detail-value"  class="invoice-content-text"
+              style="display: flex; flex-direction: column; margin-left: 16px; color: #000000; font-size: 9px;">
+              <span>
+                G 5463782
+              </span>
+              <span style="margin-top: 10px">
+                XYZ
+              </span>
+              <span style="margin-top: 19px">
+                Dec 21, 2016
+              </span>
+              <span style="margin-top: 10px">
+                June 21, 2017
+              </span>
+              <span style="margin-top: 10px">
+                June 30, 2017
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div style="margin-top: 12px; height: 1px; background-color: #f1f1f1;"></div>
-    </div>
-
-    <div id="payment-information" style="display: flex; flex-direction: column;">
-      <div>
-        <span class="invoice-title-text" style="font-size: 9px; color: #222948; line-height: 7px;">
-          PAYMENT INFORMATION
-        </span>
-        <span class="invoice-content-text" style="font-size: 8px; color: #9b9b9b; line-height: 8px;">
-          (For remittance by wire transfer, please refer the bank details provided below)
-        </span>
-      </div>
-
-      <div style="margin-top: 13px; height: 1px; background-color: rgba(151, 151, 151, 0.15);"></div>
-
-      <div style="display: flex; flex-direction: row; justify-content: space-between; line-height: 6px; margin-top: 17px;">
-        <div style="display: flex; flex-direction: row;">
+      <div id="billing-details">
+        <div id="billing-header" style="display: flex; flex-direction: row;">
+          <span class="invoice-title-text" style="font-size: 9px; color: #222948; margin-right: 52px; line-height: 7px;">
+            Guest Details
+          </span>
           <div class="invoice-title-text"
-            style="display: flex; flex-direction: column; color: #9e9e9e; font-size: 8px;">
-            <span>ACCOUNT NAME</span>
-            <span style="margin-top: 10px;">BANK NAME &amp; A/C TYPE</span>
-            <span style="margin-top: 10px;">IFSC CODE</span>
-          </div>
-          <div class="invoice-content-text"
-            style="display: flex; flex-direction: column; margin-left: 10px; color: #000000; font-size: 9px;">
-            <span>Rubtub Solution Pvt. Ltd</span>
-            <span style="margin-top: 10px;">Axis Bank - Current Account</span>
-            <span style="margin-top: 10px;">PNB64738</span>
+            style="flex: 1; display: flex; flex-direction: row; justify-content: space-between;
+                  font-size: 9px; color: #222948; line-height: 7px; text-align: center;">
+            <span>
+              DATE
+            </span>
+            <span>
+              SERVICES
+            </span>
+            <span>
+              HSN/SAC
+            </span>
+            <span>
+              TAX
+            </span>
+            <span>
+              COST
+            </span>
+            <span>
+              SGST
+            </span>
+            <span>
+              TOTAL
+            </span>
           </div>
         </div>
 
-        <div style="display: flex; flex-direction: row;">
-          <div class="invoice-title-text"
-            style="display: flex; flex-direction: column; color: #9e9e9e; font-size: 8px;">
-            <span>PAN NO.</span>
-            <span style="margin-top: 10px;">ACCOUNT NUMBER</span>
-            <span style="margin-top: 10px;">SWIFT CODE</span>
+        <div style="margin-top: 12px; height: 1px; background-color: #f1f1f1;"></div>
+
+        <div style="margin-top: 15px; height: 1px; background-color: #f1f1f1;"></div>
+
+        <div id="total-amount-info"
+          style="display: flex; flex-direction: row; align-items: center; margin-top: 10px;">
+
+          <div style="flex: 1; display: flex; flex-direction: column;">
+            <span class="invoice-title-text" style="line-height: 7px; font-size: 9px; color: #222948;">
+              TOTAL
+            </span>
+            <span class="invoice-content-text"
+              style="line-height: 6px; font-size: 8px; color: #9b9b9b; margin-top: 6px;">
+              Tax is not payable on reverse charge basis
+            </span>
           </div>
-          <div class="invoice-content-text"
-            style="display: flex; flex-direction: column; margin-left: 10px; color: #000000; font-size: 9px;">
-            <span>G728BDHD99</span>
-            <span style="margin-top: 10px;">4673 8219 3764 5821</span>
-            <span style="margin-top: 10px;">BF738228</span>
+
+          <div class="invoice-title-text"
+              style="display: flex; flex-direction: row; line-height: 7px; font-size: 8px; color: #222948;">
+              <span>
+                &#x20b9;3336
+              </span>
+
+              <span>
+                &#x20b9;3336
+              </span>
+
+              <span>
+                &#x20b9;3336
+              </span>
+
+              <span>
+                &#x20b9;3336
+              </span>
+          </div>
+        </div>
+
+        <div style="margin-top: 10px; height: 1px; background-color: #f1f1f1;"></div>
+      </div>
+
+      <div id="payment-info" style="display: flex; flex-direction: column;">
+        <div>
+          <span class="invoice-title-text" style="font-size: 9px; color: #222948; line-height: 7px;">
+            PAYMENT INFORMATION
+          </span>
+          <span class="invoice-content-text" style="font-size: 8px; color: #9b9b9b; line-height: 8px;">
+            (For remittance by wire transfer, please refer the bank details provided below)
+          </span>
+        </div>
+
+        <div style="margin-top: 13px; height: 1px; background-color: rgba(151, 151, 151, 0.15);"></div>
+
+        <div style="display: flex; flex-direction: row; justify-content: space-between; line-height: 6px; margin-top: 17px;">
+          <div style="display: flex; flex-direction: row;">
+            <div class="invoice-title-text"
+              style="display: flex; flex-direction: column; color: #9e9e9e; font-size: 8px;">
+              <span>ACCOUNT NAME</span>
+              <span style="margin-top: 10px;">BANK NAME &amp; A/C TYPE</span>
+              <span style="margin-top: 10px;">IFSC CODE</span>
+            </div>
+            <div class="invoice-content-text"
+              style="display: flex; flex-direction: column; margin-left: 10px; color: #000000; font-size: 9px;">
+              <span>Rubtub Solution Pvt. Ltd</span>
+              <span style="margin-top: 10px;">Axis Bank - Current Account</span>
+              <span style="margin-top: 10px;">PNB64738</span>
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: row;">
+            <div class="invoice-title-text"
+              style="display: flex; flex-direction: column; color: #9e9e9e; font-size: 8px;">
+              <span>PAN NO.</span>
+              <span style="margin-top: 10px;">ACCOUNT NUMBER</span>
+              <span style="margin-top: 10px;">SWIFT CODE</span>
+            </div>
+            <div class="invoice-content-text"
+              style="display: flex; flex-direction: column; margin-left: 10px; color: #000000; font-size: 9px;">
+              <span>G728BDHD99</span>
+              <span style="margin-top: 10px;">4673 8219 3764 5821</span>
+              <span style="margin-top: 10px;">BF738228</span>
+            </div>
           </div>
         </div>
       </div>
+
+      <div id="footer" style="display: flex; flex-direction: column;">
+        <span class="invoice-title-text" style="font-size: 8px; color: #4a4a4a; line-height: 6px;">
+          Thank you for booking with Treebo
+        </span>
+
+        <span class="invoice-title-text"
+          style="font-size: 7px; color: #5c5c5c; line-height: 12px; margin-top: 11px;">
+          Issued by Treebo Royce :
+        </span>
+
+        <span class="invoice-content-text-text" style="font-size: 7px; color: #5c5c5c; line-height: 12px;">
+          Treebo Hotels (Ruptub Solutions Private Limited) is engaged in marketing the services, collecting the payments for stays of this hotel and in providing expertise to this hotel in maintaining service standards. It does not own or operate the hotel. This invoice has been generated by Seven Apartments Worli and the taxes collected above have been collected directly by the hotel under the tax registrations.
+        </span>
+
+        <span class="invoice-title-text" style="font-size: 8px; color: #4a4a4a; line-height: 6px; margin-top: 12px;">
+          GSTN: Ruptub Solutions Private Limited : XXXXXX
+        </span>
+
+        <div style="margin-top: 12px; height: 1px; background-color: rgba(151, 151, 151, 0.15);"></div>
+
+        <span class="invoice-content-text" style="font-size: 8px; color: #8a8a8a; line-height: 12px; margin-top: 8px;">
+          This is a computer generated invoice, does not require signatures.
+        </span>
+      </div>
     </div>
-
-    <div id="footer" style="display: flex; flex-direction: column;">
-      <span class="invoice-title-text" style="font-size: 8px; color: #4a4a4a; line-height: 6px;">
-        Thank you for booking with Treebo
-      </span>
-
-      <span class="invoice-title-text"
-        style="font-size: 7px; color: #5c5c5c; line-height: 12px; margin-top: 11px;">
-        Issued by Treebo Royce :
-      </span>
-
-      <span class="invoice-content-text-text" style="font-size: 7px; color: #5c5c5c; line-height: 12px;">
-        Treebo Hotels (Ruptub Solutions Private Limited) is engaged in marketing the services, collecting the payments for stays of this hotel and in providing expertise to this hotel in maintaining service standards. It does not own or operate the hotel. This invoice has been generated by Seven Apartments Worli and the taxes collected above have been collected directly by the hotel under the tax registrations.
-      </span>
-
-      <span class="invoice-title-text" style="font-size: 8px; color: #4a4a4a; line-height: 6px; margin-top: 12px;">
-        GSTN: Ruptub Solutions Private Limited : XXXXXX
-      </span>
-
-      <div style="margin-top: 12px; height: 1px; background-color: rgba(151, 151, 151, 0.15);"></div>
-
-      <span class="invoice-content-text" style="font-size: 8px; color: #8a8a8a; line-height: 12px; margin-top: 8px;">
-        This is a computer generated invoice, does not require signatures.
-      </span>
-    </div>
-
   </body>
 
 </html>
