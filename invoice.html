@@ -8,7 +8,8 @@
     <!-- extra div for background color hack during printing (because if we provide background color to body then it is ignored during printing) -->
     <div style="background-color: #f1f1f1; padding-bottom: 5px;">
       <div id="header">
-        <div id="header-top">
+
+        <div id="header-top" style="display: inline-block; width: 100%;">
           <img id="logo" src="logo.svg" />
 
           <div id="hotel-details">
@@ -21,8 +22,7 @@
           </div>
         </div>
 
-        <div style="display: flex; flex-direction: row; align-items: flex-end;
-                    margin-top: 19px; line-height: 6px;">
+        <div style="clear: left; margin-top: 19px; line-height: 6px;">
           <span class="invoice-title-text" style="font-size: 24px; line-height: 18px">Invoice</span>
           <span class="invoice-content-text" style="color: #9b9b9b; margin-left: 6px;">
             Original for recipient and Duplicate for Supplier.
