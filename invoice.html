@@ -116,7 +116,7 @@
               </div>
           </div>
 
-          <div id="booking-details-section" style="float: right; line-height: 6px; margin-right: 2px;">
+          <div id="booking-details-section" style="float: right; line-height: 6px;">
             <div id="booking-detail-key"  class="invoice-title-text"
               style="color: #9e9e9e; font-size: 8px; display: inline-block;">
               <p style="margin: 0px;">
@@ -137,7 +137,7 @@
             </div>
 
             <div id="booking-detail-value"  class="invoice-content-text"
-              style="display: inline-block; margin-left: 18px; color: #000000; font-size: 9px;">
+              style="display: inline-block; margin-left: 18px; color: #000000; font-size: 9px; padding-right: 8px;">
               <p style="margin: 0px">
                 G 5463782
               </p>
@@ -162,36 +162,57 @@
       <div id="billing-details">
         <!-- billing details table -->
         <table style="width:100%; border-collapse: collapse;">
-          <thead style="border-bottom: 1px solid #f1f1f1; padding-bottom: 13px;">
+          <thead style="border-bottom: 1px solid #f1f1f1;">
             <tr class="invoice-title-text"
               style="line-height: 7px; font-size: 9px; color: #222948; width: 100%; text-align: center; height: 32px;">
               <th style="width: 19%; text-align: left;">GUEST DETAILS</th>
               <th style="width: 12%;">DATE</th>
               <th style="width: 12%;">SERVICES</th>
               <th style="width: 11%;">HSN / SAC</th>
-              <th style="width: 11%;">TAX</th>
-              <th style="width: 12%;">CGST</th>
-              <th style="width: 12%;">SGST</th>
+              <th style="width: 11%; text-align: right;">TAX</th>
+              <th style="width: 12%; text-align: right;">CGST</th>
+              <th style="width: 12%; text-align: right;">SGST</th>
               <th style="width: 11%; text-align: right">TOTAL</th>
             </tr>
           </thead>
           <tbody style="padding-top: 15px;">
+            <tr style="height: 32px;">
+              <td>
+
+              </td>
+            </tr>
+
+            <!-- total price row -->
             <tr class="invoice-content-text"
-              style="line-height: 7px; font-size: 8px; color: #9b9b9b; width: 100%; text-align: center;">
-              <th style="width: 19%; text-align: left;">GUEST DETAILS</th>
-              <th style="width: 12%;">DATE</th>
-              <th style="width: 12%;">SERVICES</th>
-              <th style="width: 11%;">HSN / SAC</th>
-              <th style="width: 11%;">TAX</th>
-              <th style="width: 12%;">CGST</th>
-              <th style="width: 12%;">SGST</th>
-              <th style="width: 11%; text-align: right">TOTAL</th>
+              style="line-height: 7px; font-size: 8px; color: #9b9b9b; width: 100%; text-align: center; border-top: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; height: 40px;">
+              <td style="width: 19%; text-align: left;" colspan="4">
+                <p class="invoice-title-text" style="margin: 0px; color: #222958; font-size: 9px; line-height: 7px;">
+                  TOTAL
+                </p>
+                <p class="invoice-content-text" style="margin: 0px; color: #9b9b9b; font-size: 8px; line-height: 7px;">
+                  Tax is not payable on reverse charge basis
+                </p>
+              </td>
+              <td class="invoice-title-text"
+                style="width: 11%; color: #222948; font-size: 8px; line-height: 7px; text-align: right;">
+                ₹3336
+              </td>
+              <td class="invoice-title-text"
+                style="width: 12%; color: #222948; font-size: 8px; line-height: 7px; text-align: right;">
+                ₹3336
+              </td>
+              <td class="invoice-title-text"
+                style="width: 12%; color: #222948; font-size: 8px; line-height: 7px; text-align: right;">
+                ₹3336
+              </td>
+              <td class="invoice-title-text"
+                style="width: 11%; color: #222948; font-size: 8px; line-height: 7px; text-align: right">
+                ₹3336
+              </td>
             </tr>
           </tbody>
 
         </table>
-
-        <div style="margin-top: 10px; height: 1px; background-color: #f1f1f1;"></div>
 
         <div id="payable-amount-info" style="display: inline-block; width: 100%; margin-top: 21px; position: relative;">
           <div id="signature" style="display: inline-block; position: absolute; bottom: 0;">
@@ -199,7 +220,7 @@
               Authorised Signatures
             </p>
             <p id="hotel-signature" class="invoice-title-text"
-              style="line-height: 7px; font-size: 9px; color: #212121; margin: 10px 0px 0px 0px;">
+              style="line-height: 7px; font-size: 9px; color: #212121; margin: 10px 0px 0px 0px; padding-right: 8px;">
               For the Royce Hotel
             </p>
           </div>
@@ -267,7 +288,7 @@
             <div class="invoice-content-text"
               style="display: inline-block; margin-left: 10px; color: #000000; font-size: 9px;">
               <p style="margin: 0px;">Rubtub Solution Pvt. Ltd</p>
-              <p style="margin: 10px 0px 0px 0px;">Axis Bank - Current Account</p>
+              <p style="margin: 10px 0px 0px 0px; padding-right: 8px;">Axis Bank - Current Account</p>
               <p style="margin: 10px 0px 0px 0px;">PNB64738</p>
             </div>
           </div>
